@@ -56,7 +56,7 @@ const Step4 = () => {
           value={todoText} // inputの値をtodoText状態と紐付ける (制御コンポーネント)
           onChange={handleInputChange} // 入力変更時にhandleInputChangeを呼び出す
           placeholder="新しいTODOを入力..."
-          className="flex-grow p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+          className="flex-grow p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
         />
         <Button onClick={handleAddTodo} className="bg-purple-500 hover:bg-purple-600">
           追加
