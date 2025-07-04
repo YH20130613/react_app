@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-8 w-[700px]">
-      <h1 className="text-4xl font-extrabold text-gray-900 mb-8">React ステップ表示の実験</h1>
+      <h1 className="text-4xl font-extrabold text-gray-900 mb-8">React 表示の確認</h1>
 
       {/* Paginationコンポーネントを使用 */}
       <Pagination
