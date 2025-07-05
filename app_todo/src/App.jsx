@@ -5,11 +5,12 @@ import Step2 from './pages/Step2';
 import Step3 from './pages/Step3';
 import Step4 from './pages/Step4';
 import Step5 from './pages/Step5';
+import Step6 from './pages/Step6';
 import Pagination from './components/Pagination';
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1); // 現在のステップを管理
-  const totalSteps = 5; // 全ステップ数
+  const totalSteps = 6; // 全ステップ数
   const goToNextStep = () => {
     if (currentStep < totalSteps) {
       setCurrentStep(prevStep => prevStep + 1);
@@ -33,6 +34,8 @@ function App() {
         return <Step4 />;
       case 5:
         return <Step5 />;
+      case 6:
+        return <Step6 />;
       default:
         return <p className="text-red-500">エラー: 不明なステップです。</p>;
     }

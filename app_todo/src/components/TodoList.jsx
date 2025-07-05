@@ -1,3 +1,4 @@
+// src/components/TodoList.jsx
 import React from 'react'
 
 const TodoList = ({ todos }) => {
@@ -18,7 +19,7 @@ const TodoList = ({ todos }) => {
         </ul>
       )}
     </div>
-  )
-}
+  );
+};
 
 export default TodoList
