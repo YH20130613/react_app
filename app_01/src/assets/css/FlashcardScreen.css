@@ -1,0 +1,117 @@
+.flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+ }
+
+ .progress {
+  font-size: 1.2em;
+  margin-top: 20px;
+ }
+
+ .card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+ }
+
+ .card .word {
+  word-break: break-word;
+ }
+
+ .card .answer {
+  margin-top: 20px;
+  font-size: 1em;
+  text-align: left;
+ }
+
+ .controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+ }
+
+ .btn {
+  /* width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer; */
+  display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-width: 0px;
+    border-style: none;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    appearance: none;
+    transition-property: background;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+    cursor: pointer;
+    margin: 0px 0.5px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 243, 243);
+ }
+
+
+
+ .controls .memorized-btn {
+  grid-column: 1 / 2;
+  background-color: #ccff90;
+ }
+
+ .controls .not-memorized-btn {
+  grid-column: 2 / 2;
+  background-color: #ffcdd2;
+ }
+ .controls .show-answer-btn {
+  grid-column: 1 / 2;
+  background-color: #e0f2f7;
+ }
+ .controls .next-btn {
+  grid-column: 2 / 2;
+  background-color: #bbdefb;
+ }
+
+ .examples {
+  margin-top: 15px;
+ }
+
+ .examples h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+ }
+
+ .examples ul {
+  padding-left: 20px;
+ }
+
+ .examples li a {
+  color: #1976d2;
+  text-decoration: none;
+ }
